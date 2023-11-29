@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{%  load static %}
+
+
+{% block body %}
+        <!-- Hero Start -->
+        <div class="container-fluid bg-light py-6 my-6 mt-0">
+            <div class="container text-center animated bounceInDown">
+                <h1 class="display-1 mb-4">Learn More About Tarnish Free Jewellery</h1>
+                <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+                    <li class="breadcrumb-item"><a href={% url "dazzle:home" %}>Home</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Blog</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog py-6">
+            <div class="container">
+                <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Blogs</small>
+                    <h1 class="display-5 mb-5">Learn More About Tarnish Free Jewellery</h1>
+                </div>
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src={%static "img/glitz4.jpeg" %} class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">21</p>
+                                        <p class="fw-bold mb-0">Oct</p>
+                                        <p class="fw-bold mb-0">2022</p>
+                                    </div>
+                                </div>
+                                <a href="https://medium.com/@tarnishfreejewelry/reasons-to-buy-tarnish-free-jewelry-cb169c5eb727" class="h5 lh-base my-auto h-100 p-3">Reasons to buy Tarnish Free Jewellery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <div class="overflow-hidden rounded">
+                                <img src={%static "img/glitz13.jpeg"%} class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="blog-content mx-4 d-flex rounded bg-light">
+                                <div class="text-dark bg-primary rounded-start">
+                                    <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                                        <p class="fw-bold mb-0">16</p>
+                                        <p class="fw-bold mb-0">Sep</p>
+                                        <p class="fw-bold mb-0">2023</p>
+                                    </div>
+                                </div>
+                                <a href="https://medium.com/@mac61462/some-tips-for-styling-your-outfit-with-gold-jewelry-b56bf2826b0e" class="h5 lh-base my-auto h-100 p-3">A Guide To Styling Gold Jewellery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+{% endblock %}
+
+
+        
