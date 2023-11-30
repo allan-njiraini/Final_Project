@@ -15,6 +15,15 @@
         </div>
         <!-- Hero End -->
 
+        {%if messages %}
+        <div class="container">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> Thanks for reaching us.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        </div>
+        {% endif %}  
+
 
         <!-- Contact Start -->
         <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
@@ -26,10 +35,11 @@
                             <h1 class="display-5 mb-0">Contact Us For Any Queries!</h1>
                         </div>
                         <div class="col-md-6 col-lg-7">
-                            <form>
-                                <input type="text" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Your Name">
-                                <input type="email" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Enter Your Email">
-                                <textarea class="w-100 form-control mb-4 p-3 border-primary bg-light" rows="4" cols="10" placeholder="Your Message"></textarea>
+                            <form method='post' enctype='multipart/form-data'>
+                                {% csrf_token %}
+                                <input type="text" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Your Name" name="name">
+                                <input type="email" class="w-100 form-control p-3 mb-4 border-primary bg-light" placeholder="Enter Your Email" name="address">
+                                <textarea class="w-100 form-control mb-4 p-3 border-primary bg-light" rows="4" cols="10" placeholder="Your Message" name="message"></textarea>
                                 <button class="w-100 btn btn-primary form-control p-3 border-primary bg-primary rounded-pill" type="submit">Submit Now</button>
                             </form>
                         </div>
@@ -46,16 +56,16 @@
                                     <i class="fas fa-envelope fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Mail Us</h4>
-                                        <p class="mb-2">info@example.com</p>
-                                        <p class="mb-0">support@example.com</p>
+                                        <p class="mb-2">allannjiraini@gmail.com</p>
+                                        <p class="mb-0">support@yahoo.com</p>
                                     </div>
                                 </div>
                                 <div class="d-inline-flex w-100 border border-primary p-4 rounded">
                                     <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
                                     <div class="">
                                         <h4>Telephone</h4>
-                                        <p class="mb-2">(+012) 3456 7890 123</p>
-                                        <p class="mb-0">(+704) 5555 0127 296</p>
+                                        <p class="mb-2">(+254) 717 833 317</p>
+                                        <p class="mb-0">(+254) 795 019 015</p>
                                     </div>
                                 </div>
                             </div>

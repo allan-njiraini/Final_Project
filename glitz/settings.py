@@ -136,3 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+#config
+DEFAULT_FROM_EMAIL = "allannjiraini@gmail.com"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

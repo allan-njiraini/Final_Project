@@ -22,4 +22,14 @@ class Products(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+class Email(models.Model):
+
+    name = models.CharField(max_length=60)
+    address = models.EmailField()
+    message = models.TextField(max_length=300)
+
+    def __str__(self):
+        return self.name
 

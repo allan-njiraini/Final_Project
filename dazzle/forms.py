@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from dazzle.models import Categories, Products
+from dazzle.models import Categories, Products, Email
 
 
 
@@ -12,3 +12,11 @@ class ProductsForm(ModelForm):
     class Meta:
         model = Products
         fields = ["name", "image", "price", "category"]
+
+
+class EmailForm(ModelForm):
+    class Meta:
+        model = Email
+        fields = ["name", "address", "message"]
+
+
